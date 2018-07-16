@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   get 'home/index'
   get 'keyboard' => 'home#keyboard_init'
   post 'message' => 'home#keyboard_control'
-  get 'index' => 'home#index'
-  root 'home#index'
+  # get 'index' => 'home#index'
+  # root 'home#index'
   
 
   # The priority is based upon order of creation: first created -> highest priority.
