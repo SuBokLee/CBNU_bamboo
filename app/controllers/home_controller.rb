@@ -74,17 +74,17 @@ class HomeController < ApplicationController
         }
       }
       render json: msg, status: :ok
-    else
-      msg = {
-        message: {
-          text: "150자를 넘으면 안됩니다."
-        },
-        keyboard: {
-          type: "text"
+      else
+        msg = {
+          message: {
+            text: "150자를 넘으면 안됩니다."
+          },
+          keyboard: {
+            type: "text"
+          }
         }
-      }
-      render json: msg, status: :ok    
-    end
+        render json: msg, status: :ok    
+      end
     end   #if else end
     
   end      #keyboard_int end
