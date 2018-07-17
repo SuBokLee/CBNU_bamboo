@@ -17,7 +17,7 @@ class HomeController < ApplicationController
     if content == "입력"
       dddd=Post.all
       vv=Post.count
-      gg = "--------------------------------\n최근 글 5개 입니다.\n--------------------------------\n" +"- "+ dddd.last.content + "\n\n" +"- "+ dddd.find(vv-1).content + "\n\n" +"- "+ dddd.find(vv-2).content+ "\n\n" +"- "+ dddd.find(vv-3).content + "\n\n" +"- "+ dddd.find(vv-4).content
+      gg = "--------------------------------\n최근 글 입니다.\n--------------------------------\n" +"- "+ dddd.last.content + "\n\n" +"- "+ dddd.find(vv-1).content + "\n\n" +"- "+ dddd.find(vv-2).content+ "\n\n" +"- "+ dddd.find(vv-3).content + "\n\n" +"- "+ dddd.find(vv-4).content
       
       msg = {
         message: {
@@ -46,7 +46,7 @@ class HomeController < ApplicationController
 
       msg = {
         message: {
-          text: "'입력'을 선택한뒤 원하는 내용을 입력하시면 저장됩니다.\n처음으로 돌아갈때는 'ㅇㅇ'을 입력해주세요.",
+          text: "'입력'을 선택한뒤 원하는 내용을 입력하시면 저장됩니다.\n 주의! 상담원으로 전환하기 아닙니다\n처음으로 돌아갈때는 'ㅇㅇ'을 입력해주세요.",
                           photo: {
                           url: "http://k.kakaocdn.net/dn/DFKfE/btqnm3nWTK6/fR2F7SbUMwBKNKLlme9BN0/img_xl.jpg",
                           width: 720,
@@ -65,7 +65,7 @@ class HomeController < ApplicationController
       
 
     else 
-          if @received_data["content"].length < 150
+          if @received_data["content"].length < 500
           a=Post.new
           a.content=@received_data["content"]
           a.save
@@ -79,7 +79,7 @@ class HomeController < ApplicationController
               text: gg,
               message_button: {
                 label: "전체보기",
-                url:"http://13.209.5.223/home/index"}
+                url:"http://13.209.5.223"}
             },
             keyboard: {
               type: "text"
@@ -93,14 +93,14 @@ class HomeController < ApplicationController
           else
           dddd=Post.all
           vv=Post.count
-          gg = "--------------------------------\n150자를 넘을 수 없습니다.\n--------------------------------\n" +"- "+ dddd.last.content + "\n\n" +"- "+ dddd.find(vv-1).content + "\n\n" +"- "+ dddd.find(vv-2).content+ "\n\n" +"- "+ dddd.find(vv-3).content + "\n\n" +"- "+ dddd.find(vv-4).content
+          gg = "--------------------------------\n500자를 넘을 수 없습니다.\n--------------------------------\n" +"- "+ dddd.last.content + "\n\n" +"- "+ dddd.find(vv-1).content + "\n\n" +"- "+ dddd.find(vv-2).content+ "\n\n" +"- "+ dddd.find(vv-3).content + "\n\n" +"- "+ dddd.find(vv-4).content
                    
           msg = {
             message: {
               text: gg,
               message_button: {
                 label: "전체보기",
-                url:"http://13.209.5.223/home/index"}
+                url:"http://13.209.5.223"}
             },
             keyboard: {
               type: "text",
