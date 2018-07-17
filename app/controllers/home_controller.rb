@@ -21,7 +21,7 @@ class HomeController < ApplicationController
       
       msg = {
         message: {
-          text: "내용을 입력하세요(돌아가기 => 'ㅇㅇ'입력)"
+          text: "내용을 입력하세요(처음으로 = 'ㅇㅇ'입력)"
         },
         keyboard: {
           type: "text"
