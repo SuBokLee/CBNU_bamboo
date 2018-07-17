@@ -46,7 +46,7 @@ class HomeController < ApplicationController
 
       msg = {
         message: {
-          text: "'입력'을 선택한뒤 원하는 내용을 입력하시면 저장됩니다.(최대 500자)\n 주의! 상담원으로 전환하기 아닙니다\n처음으로 돌아갈때는 'ㅇㅇ'을 입력해주세요.",
+          text: "'입력'을 선택한뒤 원하는 내용을 입력하시면 저장됩니다.(최대 500자)\n처음으로 돌아갈때는 'ㅇㅇ'을 입력해주세요.",
                           photo: {
                           url: "http://k.kakaocdn.net/dn/dgH4dE/btqnpgNltOo/hLX0UBeuAEmaBxkAOnBnsk/img_xl.jpg",
                           width: 720,
