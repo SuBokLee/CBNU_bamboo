@@ -45,7 +45,7 @@ class HomeController < ApplicationController
           text: gg,
           message_button: {
             label: "전체보기",
-            url:"https://dingco-hackerton-suboklee.c9users.io/"}
+            url:"http://13.209.5.223/home/index"}
         },
         keyboard: {
           type: "buttons",
