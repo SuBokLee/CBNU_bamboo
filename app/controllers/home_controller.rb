@@ -79,7 +79,7 @@ class HomeController < ApplicationController
               text: gg,
               message_button: {
                 label: "전체보기",
-                url:"http://13.209.5.223"}
+                url:"http://13.209.70.82/"}
             },
             keyboard: {
               type: "text"
@@ -100,7 +100,7 @@ class HomeController < ApplicationController
               text: gg,
               message_button: {
                 label: "전체보기",
-                url:"http://13.209.5.223"}
+                url:"http://13.209.70.82/"}
             },
             keyboard: {
               type: "text",
