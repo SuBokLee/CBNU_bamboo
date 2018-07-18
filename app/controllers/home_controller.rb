@@ -73,7 +73,7 @@ class HomeController < ApplicationController
       dddd=Post.all
       vv=Post.count
       # gg = "--------------------------------\n저장되었습니다.\n--------------------------------\n" +"- "+ dddd.last.content + "\n\n" +"- "+ dddd.find(vv-1).content + "\n\n" +"- "+ dddd.find(vv-2).content+ "\n\n" +"- "+ dddd.find(vv-3).content + "\n\n" +"- "+ dddd.find(vv-4).content
-             gg = "hi"  
+      gg = "hi"  
           msg = {
             message: {
               text: gg,
@@ -94,7 +94,7 @@ class HomeController < ApplicationController
           dddd=Post.all
           vv=Post.count
           # gg = "--------------------------------\n500자를 넘을 수 없습니다.\n--------------------------------\n" +"- "+ dddd.last.content + "\n\n" +"- "+ dddd.find(vv-1).content + "\n\n" +"- "+ dddd.find(vv-2).content+ "\n\n" +"- "+ dddd.find(vv-3).content + "\n\n" +"- "+ dddd.find(vv-4).content
-                   gg = "hi"
+          gg = "hi"
           msg = {
             message: {
               text: gg,
