@@ -17,8 +17,8 @@ class HomeController < ApplicationController
     if content == "입력"
       dddd=Post.all
       vv=Post.count
-      gg = "--------------------------------\n내용을 입력하세요\n(처음으로 ='ㅇㅇ'입력)\n--------------------------------\n" +"- "+ dddd.last.content + "\n\n" +"- "+ dddd.find(vv-1).content + "\n\n" +"- "+ dddd.find(vv-2).content+ "\n\n" +"- "+ dddd.find(vv-3).content + "\n\n" +"- "+ dddd.find(vv-4).content
-      
+      # gg = "--------------------------------\n내용을 입력하세요\n(처음으로 ='ㅇㅇ'입력)\n--------------------------------\n" +"- "+ dddd.last.content + "\n\n" +"- "+ dddd.find(vv-1).content + "\n\n" +"- "+ dddd.find(vv-2).content+ "\n\n" +"- "+ dddd.find(vv-3).content + "\n\n" +"- "+ dddd.find(vv-4).content
+      gg = "hi"
       msg = {
         message: {
           text: gg
@@ -72,8 +72,8 @@ class HomeController < ApplicationController
           
       dddd=Post.all
       vv=Post.count
-      gg = "--------------------------------\n저장되었습니다.\n--------------------------------\n" +"- "+ dddd.last.content + "\n\n" +"- "+ dddd.find(vv-1).content + "\n\n" +"- "+ dddd.find(vv-2).content+ "\n\n" +"- "+ dddd.find(vv-3).content + "\n\n" +"- "+ dddd.find(vv-4).content
-               
+      # gg = "--------------------------------\n저장되었습니다.\n--------------------------------\n" +"- "+ dddd.last.content + "\n\n" +"- "+ dddd.find(vv-1).content + "\n\n" +"- "+ dddd.find(vv-2).content+ "\n\n" +"- "+ dddd.find(vv-3).content + "\n\n" +"- "+ dddd.find(vv-4).content
+             gg = "hi"  
           msg = {
             message: {
               text: gg,
@@ -93,8 +93,8 @@ class HomeController < ApplicationController
           else
           dddd=Post.all
           vv=Post.count
-          gg = "--------------------------------\n500자를 넘을 수 없습니다.\n--------------------------------\n" +"- "+ dddd.last.content + "\n\n" +"- "+ dddd.find(vv-1).content + "\n\n" +"- "+ dddd.find(vv-2).content+ "\n\n" +"- "+ dddd.find(vv-3).content + "\n\n" +"- "+ dddd.find(vv-4).content
-                   
+          # gg = "--------------------------------\n500자를 넘을 수 없습니다.\n--------------------------------\n" +"- "+ dddd.last.content + "\n\n" +"- "+ dddd.find(vv-1).content + "\n\n" +"- "+ dddd.find(vv-2).content+ "\n\n" +"- "+ dddd.find(vv-3).content + "\n\n" +"- "+ dddd.find(vv-4).content
+                   gg = "hi"
           msg = {
             message: {
               text: gg,
